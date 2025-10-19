@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.InputSystem.XR.Haptics;
 using Utils;
-
+[RequireComponent(typeof(PolygonCollider2D))]
 public class EnemyAI : MonoBehaviour
 {
     [SerializeField] private State _startingState;
@@ -144,9 +144,9 @@ public class EnemyAI : MonoBehaviour
     {
         if (_navMeshAgent.velocity == Vector3.zero)
         {
-            return true;
+            return false;
         }
-        else { return false; }
+        else { return true; }
         }
     private void Roaming()
     {

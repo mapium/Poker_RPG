@@ -407,17 +407,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1447277543 stripped
+--- !u!114 &1662375117 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 203244084033332630, guid: edbd35fef9d7a9f4284b0bf9165813ca, type: 3}
+  m_CorrespondingSourceObject: {fileID: 9020280495495869522, guid: edbd35fef9d7a9f4284b0bf9165813ca, type: 3}
   m_PrefabInstance: {fileID: 1716255264}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8b4af7e47b87734cbeb88827457f0cb, type: 3}
+  m_Script: {fileID: 11500000, guid: c73f934f3a9fec5488f748d5f955cb81, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyEntity
 --- !u!1 &1702109321
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,20 +507,36 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 203244084033332630, guid: edbd35fef9d7a9f4284b0bf9165813ca, type: 3}
-      propertyPath: _isChasingEnemy
+      propertyPath: _attackRate
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4950129462803494139, guid: edbd35fef9d7a9f4284b0bf9165813ca, type: 3}
-      propertyPath: _enemyAI
+    - target: {fileID: 203244084033332630, guid: edbd35fef9d7a9f4284b0bf9165813ca, type: 3}
+      propertyPath: _isAttackngEnemy
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1563222236665440325, guid: edbd35fef9d7a9f4284b0bf9165813ca, type: 3}
+      propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1447277543}
+      objectReference: {fileID: -133314408, guid: 098a203b4595004439081165fd96c8a5, type: 3}
+    - target: {fileID: 2065970852345160651, guid: edbd35fef9d7a9f4284b0bf9165813ca, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3354688896696931033, guid: edbd35fef9d7a9f4284b0bf9165813ca, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4950129462803494139, guid: edbd35fef9d7a9f4284b0bf9165813ca, type: 3}
+      propertyPath: _enemyEntity
+      value: 
+      objectReference: {fileID: 1662375117}
     - target: {fileID: 7799292220767255455, guid: edbd35fef9d7a9f4284b0bf9165813ca, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.1510625
+      value: -5.92
       objectReference: {fileID: 0}
     - target: {fileID: 7799292220767255455, guid: edbd35fef9d7a9f4284b0bf9165813ca, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.26544845
+      value: -2.84
       objectReference: {fileID: 0}
     - target: {fileID: 7799292220767255455, guid: edbd35fef9d7a9f4284b0bf9165813ca, type: 3}
       propertyPath: m_LocalPosition.z
@@ -611,13 +627,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4879346166332427994, guid: 35d5812b1dea3ea41b36c647698c7324, type: 3}
+    - target: {fileID: 5377069734036264100, guid: 35d5812b1dea3ea41b36c647698c7324, type: 3}
       propertyPath: m_IsTrigger
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6215849337425852486, guid: 35d5812b1dea3ea41b36c647698c7324, type: 3}
-      propertyPath: _damageAmount
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8090400760027802041, guid: 35d5812b1dea3ea41b36c647698c7324, type: 3}
       propertyPath: m_Name

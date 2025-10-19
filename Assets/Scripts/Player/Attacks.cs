@@ -38,10 +38,11 @@ public class Attacks : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.transform.TryGetComponent(out EnemyEntity enemyEntity))
-        {
-            enemyEntity.TakeDamage(_damageAmount);
-        }
+            if (collision.transform.TryGetComponent(out EnemyEntity enemyEntity))
+            {
+                Debug.Log("Hit Enemy");
+                enemyEntity.TakeDamage(_damageAmount);
+            }
     }
     public void RotateColliderToMouse()
     {

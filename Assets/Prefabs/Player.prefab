@@ -126,7 +126,112 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8d2ac45580df744dbe2fdd7d5553eb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerVisual
-  attacks: {fileID: 6215849337425852486}
+  attacks: {fileID: 4331588320172681416}
+--- !u!1 &4749487340939695368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3989975125007218094}
+  - component: {fileID: 674204775992299805}
+  - component: {fileID: 4331588320172681416}
+  m_Layer: 0
+  m_Name: Attack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3989975125007218094
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4749487340939695368}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2397225046463185548}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &674204775992299805
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4749487340939695368}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 3.0579286, y: 1.98921}
+      - {x: 2.2954054, y: 2.4402547}
+      - {x: 0.6335019, y: 2.4643044}
+      - {x: 0.7200342, y: 2.0850022}
+      - {x: 0.7609185, y: 1.7170348}
+      - {x: 0.75736433, y: 1.3167913}
+      - {x: 0.749225, y: 1.0095893}
+      - {x: 0.73559916, y: 0.72875977}
+      - {x: 0.6595458, y: -0.19421011}
+      - {x: 2.1252253, y: -0.18372801}
+      - {x: 3.303265, y: -0.118894875}
+      - {x: 3.5165095, y: 1.179171}
+  m_UseDelaunayMesh: 0
+--- !u!114 &4331588320172681416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4749487340939695368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 790fdf880bac6844092d9c0ece97e736, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Attacks
+  _damageAmount: 2
 --- !u!1 &8090400760027802041
 GameObject:
   m_ObjectHideFlags: 0
@@ -138,9 +243,7 @@ GameObject:
   - component: {fileID: 2397225046463185548}
   - component: {fileID: 5377069734036264100}
   - component: {fileID: 2397982216498553176}
-  - component: {fileID: 4879346166332427994}
   - component: {fileID: 2266632092976332854}
-  - component: {fileID: 6215849337425852486}
   - component: {fileID: 3232521087148557840}
   m_Layer: 0
   m_Name: Player
@@ -163,6 +266,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2817685746211204916}
+  - {fileID: 3989975125007218094}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &5377069734036264100
@@ -218,7 +322,7 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8090400760027802041}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -248,65 +352,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.03937328, y: -0.02952934}
   m_Size: {x: 1.2362391, y: 0.2912947}
   m_Direction: 1
---- !u!60 &4879346166332427994
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8090400760027802041}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 3.0579286, y: 1.98921}
-      - {x: 2.2954054, y: 2.4402547}
-      - {x: 0.77825546, y: 2.4552574}
-      - {x: 0.89192903, y: 2.0850022}
-      - {x: 1.466602, y: 1.6918005}
-      - {x: 1.8244338, y: 1.2391814}
-      - {x: 1.3128117, y: 0.79851866}
-      - {x: -0.30626202, y: 0.714683}
-      - {x: -0.5932201, y: -0.089812934}
-      - {x: 2.1252253, y: -0.18372801}
-      - {x: 3.303265, y: -0.118894875}
-      - {x: 3.5165095, y: 1.179171}
-  m_UseDelaunayMesh: 0
 --- !u!114 &2266632092976332854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,19 +365,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   movingSpeed: 10
---- !u!114 &6215849337425852486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8090400760027802041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 790fdf880bac6844092d9c0ece97e736, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Attacks
-  _damageAmount: 5
 --- !u!50 &3232521087148557840
 Rigidbody2D:
   serializedVersion: 5

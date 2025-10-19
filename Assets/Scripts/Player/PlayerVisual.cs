@@ -17,7 +17,7 @@ public class PlayerVisual : MonoBehaviour
     private void Update()
     {
         animator.SetBool(IS_RUNNING, Player.Instance.IsRunning());
-        //AdjustPlayerFacingDirection();
+        AdjustPlayerFacingDirection();
         Attacks.Instance.RotateColliderToMouse();
     }
 
@@ -36,20 +36,20 @@ public class PlayerVisual : MonoBehaviour
         animator.ResetTrigger(IS_ATTACK);
     }
 
-    //private void AdjustPlayerFacingDirection()
-    //{
-    //    Vector3 mousePos = GameInput.Instance.GetMousePosition();
-    //    Vector3 playerPosition = Player.Instance.GetPlayerScreenPosition();
+    private void AdjustPlayerFacingDirection()
+    {
+        Vector3 mousePos = GameInput.Instance.GetMousePosition();
+        Vector3 playerPosition = Player.Instance.GetPlayerScreenPosition();
 
-    //    if (mousePos.x < playerPosition.x)
-    //    {
-    //        transform.rotation = Quaternion.Euler(0, 180, 0);
-    //    }
-    //    else
-    //    {
-    //        transform.rotation = Quaternion.Euler(0, 0, 0);
-    //    }
-    //}
+        if (mousePos.x < playerPosition.x)
+        {
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
+        else
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+    }
 
     public void TriggerEndAttackAnimation()
     {
