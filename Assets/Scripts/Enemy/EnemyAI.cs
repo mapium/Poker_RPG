@@ -54,6 +54,11 @@ public class EnemyAI : MonoBehaviour
         StateHandler();
     }
 
+    public void SetDeathState()
+    {
+        _navMeshAgent.ResetPath();
+        _CurrentState = State.Death;
+    }
     private void StateHandler()
     {
         switch (_CurrentState)
@@ -108,7 +113,14 @@ public class EnemyAI : MonoBehaviour
         {
             if (distanceToPLayer <= _attackingDistance)
             {
-                newState = State.Attacking;
+                if (Player.Instance.IsAlive())
+                {
+                    newState = State.Attacking;
+                }
+                else
+                {
+                    newState = State.Roaming;
+                }
             }
         }
 

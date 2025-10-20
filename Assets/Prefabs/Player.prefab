@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 719207860335649430}
   - component: {fileID: 9107877062708780313}
   - component: {fileID: 331413672846136813}
+  - component: {fileID: 2770007950684982574}
   m_Layer: 0
   m_Name: PlayerVisual
   m_TagString: Untagged
@@ -127,6 +128,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerVisual
   attacks: {fileID: 4331588320172681416}
+--- !u!114 &2770007950684982574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724646000687917461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e955e84a235947e418d3ad5bcb54a71b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlashBlink
+  _damagableObject: {fileID: 2266632092976332854}
+  _blinkMaterial: {fileID: 2100000, guid: 7bf39b4a515684b4d844fa331281ed20, type: 2}
+  _blinkDuration: 0.2
 --- !u!1 &4749487340939695368
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,6 +261,7 @@ GameObject:
   - component: {fileID: 2397982216498553176}
   - component: {fileID: 2266632092976332854}
   - component: {fileID: 3232521087148557840}
+  - component: {fileID: 1415589378244117192}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -299,7 +316,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -364,7 +381,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec64e304fb24bb34e8749f425cc89dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
-  movingSpeed: 10
+  _movingSpeed: 10
+  _maxHealth: 10
+  _damageRecoveryTime: 0.5
 --- !u!50 &3232521087148557840
 Rigidbody2D:
   serializedVersion: 5
@@ -392,3 +411,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1415589378244117192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8090400760027802041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f51a1ce68f9fde849a7bd179253e4af9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KnockBack
+  _knockBackForce: 1.5
+  _knockBackMovingTimerMax: 0.3

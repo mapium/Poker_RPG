@@ -574,6 +574,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skeleton
       objectReference: {fileID: 0}
+    - target: {fileID: 9020280495495869522, guid: edbd35fef9d7a9f4284b0bf9165813ca, type: 3}
+      propertyPath: _enemySO
+      value: 
+      objectReference: {fileID: 11400000, guid: d9ded85c4ec7ad64c8bc2f31840f99e1, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -626,10 +630,6 @@ PrefabInstance:
     - target: {fileID: 2397225046463185548, guid: 35d5812b1dea3ea41b36c647698c7324, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5377069734036264100, guid: 35d5812b1dea3ea41b36c647698c7324, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8090400760027802041, guid: 35d5812b1dea3ea41b36c647698c7324, type: 3}
       propertyPath: m_Name
