@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,221 +110,221 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: _Idle_0
+      name: _Death_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 120
         height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.4, y: 0.07}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a26d3c4225a987c20800000000000000
-      internalID: 3204480812468917802
+      spriteID: e9658cc015d796e4e84121f253507472
+      internalID: -1625177708
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Idle_1
+      name: _Death_1
       rect:
         serializedVersion: 2
         x: 120
         y: 0
         width: 120
         height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.4, y: 0.07}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d08c8601772b0e030800000000000000
-      internalID: 3522011133049882637
+      spriteID: 401bd2c6bcd38f5449494593726e13f5
+      internalID: -726556388
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Idle_2
+      name: _Death_2
       rect:
         serializedVersion: 2
         x: 240
         y: 0
         width: 120
         height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.4, y: 0.07}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bb15f4a7c3b06a7d0800000000000000
-      internalID: -2907624155043114565
+      spriteID: febf5dea0afa9ee47b8226d9cf8ff4e9
+      internalID: 1157016108
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Idle_3
+      name: _Death_3
       rect:
         serializedVersion: 2
         x: 360
         y: 0
         width: 120
         height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.4, y: 0.07}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 55fa9aab13a1882f0800000000000000
-      internalID: -970496918810939563
+      spriteID: d533772bc7b03e9419891005d34ee318
+      internalID: -1990658451
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Idle_4
+      name: _Death_4
       rect:
         serializedVersion: 2
         x: 480
         y: 0
         width: 120
         height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.4, y: 0.07}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 63b06f7d34be3af90800000000000000
-      internalID: -6943447523856610506
+      spriteID: b7601bd3383c5254aacbf2c47691a11a
+      internalID: -394251255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Idle_5
+      name: _Death_5
       rect:
         serializedVersion: 2
         x: 600
         y: 0
         width: 120
         height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.4, y: 0.07}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 78145b346e7471890800000000000000
-      internalID: -7487436801176157817
+      spriteID: 7cd90aa97c7ce7d46a98fb3fccd21fbf
+      internalID: 1683069262
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Idle_6
+      name: _Death_6
       rect:
         serializedVersion: 2
         x: 720
         y: 0
         width: 120
         height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.4, y: 0.07}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0c569ea2a41f3d870800000000000000
-      internalID: 8706567805487113664
+      spriteID: e010e189a7283714f89dc52c2e630100
+      internalID: 73088725
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Idle_7
+      name: _Death_7
       rect:
         serializedVersion: 2
         x: 840
         y: 0
         width: 120
         height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.4, y: 0.07}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9892307ac777eaf30800000000000000
-      internalID: 4588736447598766473
+      spriteID: b9b43c1bbe405c447856d1a7a796190f
+      internalID: -1105937731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Idle_8
+      name: _Death_8
       rect:
         serializedVersion: 2
         x: 960
         y: 0
         width: 120
         height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.4, y: 0.07}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4b65b5beacb60f9f0800000000000000
-      internalID: -436730644578740556
+      spriteID: 71d372c96caf5114abaa0374d0553743
+      internalID: -714417254
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: _Idle_9
+      name: _Death_9
       rect:
         serializedVersion: 2
         x: 1080
         y: 0
         width: 120
         height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.4, y: 0.07}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e6194fc8f1a7bd350800000000000000
-      internalID: 6042557600975065454
+      spriteID: 1b5686bfbd0d0f64a9388182b896ad99
+      internalID: -738991889
       vertices: []
       indices: 
       edges: []
@@ -343,18 +343,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":120.0,"y":80.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":10.0,"y":1.0},"gridSpriteSize":{"x":120.0,"y":80.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.4000000059604645,"y":0.07000000029802323},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      _Idle_0: 3204480812468917802
-      _Idle_1: 3522011133049882637
-      _Idle_2: -2907624155043114565
-      _Idle_3: -970496918810939563
-      _Idle_4: -6943447523856610506
-      _Idle_5: -7487436801176157817
-      _Idle_6: 8706567805487113664
-      _Idle_7: 4588736447598766473
-      _Idle_8: -436730644578740556
-      _Idle_9: 6042557600975065454
+      _Death_0: -1625177708
+      _Death_1: -726556388
+      _Death_2: 1157016108
+      _Death_3: -1990658451
+      _Death_4: -394251255
+      _Death_5: 1683069262
+      _Death_6: 73088725
+      _Death_7: -1105937731
+      _Death_8: -714417254
+      _Death_9: -738991889
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
