@@ -65,17 +65,40 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(Transform damageSource, int damage)
     {
-        if (_canTakeDamage && _isAlive)
-        {
-            _canTakeDamage = false;
-            Debug.Log("aa");
-            // Используем статы из PlayerStats
-            playerStats.currentHealth = Mathf.Max(0, playerStats.currentHealth - damage);
+        if (!_canTakeDamage || !_isAlive) return;
 
-            _knockBack.GetKnockedBack(damageSource);
-            OnFlashBlink?.Invoke(this, EventArgs.Empty);
-            StartCoroutine(DamageRecoveryRoutine());
+        _canTakeDamage = false;
+        Debug.Log("aa");
+
+        if (playerStats == null)
+        {
+            Debug.LogWarning("PlayerStats is null in Player.TakeDamage");
+            playerStats = GetComponent<PlayerStats>();
         }
+
+        int damageToApply = damage;
+
+        // Если есть защита — урон становится 25% и защита тратится на полученный урон
+        if (playerStats != null && playerStats.currentDefense > 0)
+        {
+            damageToApply = Mathf.CeilToInt(damage * 0.25f); // 25% от входящего, округление вверх
+            int defenseSpent = damageToApply;
+            playerStats.currentDefense = Mathf.Max(0, playerStats.currentDefense - defenseSpent);
+            Debug.Log($"Defense present — damage reduced to {damageToApply}. Defense spent: {defenseSpent}. Remaining DEF: {playerStats.currentDefense}");
+        }
+
+        // Применяем урон к здоровью
+        if (playerStats != null)
+        {
+            playerStats.currentHealth = Mathf.Max(0, playerStats.currentHealth - damageToApply);
+            // Обновляем UI статов (см. PlayerStats.RefreshUI)
+            playerStats.RefreshUI();
+        }
+
+        _knockBack?.GetKnockedBack(damageSource);
+        OnFlashBlink?.Invoke(this, EventArgs.Empty);
+        StartCoroutine(DamageRecoveryRoutine());
+
         DetectDeath();
     }
 

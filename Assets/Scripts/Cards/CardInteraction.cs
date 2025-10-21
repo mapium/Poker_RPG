@@ -61,31 +61,35 @@ public class CardInteraction : MonoBehaviour, IPointerDownHandler, IPointerUpHan
         if (cardDisplay == null || cardDisplay.cardData == null)
             return;
 
-        PlayerStats playerStats = FindObjectOfType<PlayerStats>();
+        // Сохраняем данные карты перед уничтожением
+        Card usedCard = cardDisplay.cardData;
+
+        var playerStats = Player.Instance?.GetComponent<PlayerStats>();
         if (playerStats != null)
         {
-            // Сохраняем данные карты перед уничтожением
-            Card usedCard = cardDisplay.cardData;
-
             playerStats.ApplyCardStats(usedCard);
-
-            // Удаляем карту из доступных в DeckManager
-            DeckManager deckManager = FindObjectOfType<DeckManager>();
-            if (deckManager != null)
-            {
-                deckManager.RemoveCardFromAvailable(usedCard);
-            }
-
-            // Удаляем карту из руки
-            HandManager handManager = FindObjectOfType<HandManager>();
-            if (handManager != null && handManager.cardsInHand.Contains(gameObject))
-            {
-                handManager.RemoveCardFromHand(gameObject);
-            }
-
-            Destroy(gameObject);
-            Debug.Log($"Карта {usedCard.cardName} применена к персонажу и удалена из доступных!");
         }
+        else
+        {
+            Debug.LogWarning("PlayerStats not found when applying card");
+        }
+
+        // Удаляем карту из доступных в DeckManager
+        DeckManager deckManager = FindObjectOfType<DeckManager>();
+        if (deckManager != null)
+        {
+            deckManager.RemoveCardFromAvailable(usedCard);
+        }
+
+        // Удаляем карту из руки
+        HandManager handManager = FindObjectOfType<HandManager>();
+        if (handManager != null && handManager.cardsInHand.Contains(gameObject))
+        {
+            handManager.RemoveCardFromHand(gameObject);
+        }
+
+        Destroy(gameObject);
+        Debug.Log($"Карта {usedCard.cardName} применена к персонажу и удалена из доступных!");
     }
 
     private void HighlightCard(bool highlight)

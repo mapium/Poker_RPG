@@ -59,6 +59,12 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
+    // Добавил публичный метод для обновления UI из других классов
+    public void RefreshUI()
+    {
+        UpdateUI();
+    }
+
     private void UpdateUI()
     {
         if (healthText != null) healthText.text = $"HP: {currentHealth}";
