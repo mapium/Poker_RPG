@@ -15,7 +15,7 @@ MonoBehaviour:
   cardName: two of Clubs
   cardType: 02000000
   health: 0
-  damage: 2
-  buff: 00000000
-  defense: 1
+  damage: 0
+  buff: 02000000
+  defense: 2
   gold: 0

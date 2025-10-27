@@ -1,6 +1,6 @@
-using UnityEngine;
-using TMPro;
 using pokerpg;
+using TMPro;
+using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -57,6 +57,15 @@ public class PlayerStats : MonoBehaviour
             Debug.Log($"Недостаточно золота! Нужно: {amount}, есть: {currentGold}");
             return false;
         }
+    }
+
+    // НОВЫЙ МЕТОД: Пополнение золота
+    public void AddGold(int amount)
+    {
+        if (amount <= 0) return;
+        currentGold += amount;
+        UpdateUI();
+        Debug.Log($"Получено {amount} золота. Всего: {currentGold}");
     }
 
     // Добавил публичный метод для обновления UI из других классов

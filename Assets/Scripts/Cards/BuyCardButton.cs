@@ -61,14 +61,14 @@ public class BuyCardButton : MonoBehaviour
             if (costText != null)
             {
                 int cost = deckManager.GetNextCardCost();
-                costText.text = $"Купить карту: {cost} золота";
+                costText.text = $"buy a card: {cost} gold";
             }
             
             // Обновляем количество оставшихся карт
             if (cardsRemainingText != null)
             {
                 int remaining = deckManager.GetRemainingCardsCount();
-                cardsRemainingText.text = $"Карт в колоде: {remaining}";
+                cardsRemainingText.text = $"cards in a deck: {remaining}";
             }
             
             // Блокируем кнопку если нет карт или недостаточно золота
@@ -89,7 +89,7 @@ public class BuyCardButton : MonoBehaviour
                     else if (!canAfford)
                         buttonImage.color = Color.red;
                     else
-                        buttonImage.color = Color.green;
+                        buttonImage.color = Color.white;
                 }
             }
         }

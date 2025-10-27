@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7587953927860923650}
   - component: {fileID: 6097234616796199023}
   - component: {fileID: 5840917730256124580}
+  - component: {fileID: 7903565804783406198}
   m_Layer: 0
   m_Name: Objects_84
   m_TagString: Untagged
@@ -128,3 +129,19 @@ CapsuleCollider2D:
   m_Offset: {x: -0.000000004057725, y: 0.9659616}
   m_Size: {x: 2.2633822, y: 2.2633822}
   m_Direction: 1
+--- !u!114 &7903565804783406198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6859047826868692261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fa0352a4d56abd42ad2fc69deb72448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Components.NavMeshModifierVolume
+  m_Size: {x: 1.3150139, y: 1.4737968, z: 4}
+  m_Center: {x: 0.02543664, y: 0.9491272, z: 0}
+  m_Area: 0
+  m_AffectedAgents: ffffffff

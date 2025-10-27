@@ -15,7 +15,7 @@ MonoBehaviour:
   cardName: king of Clubs
   cardType: 02000000
   health: 0
-  damage: 10
-  buff: 00000000
-  defense: 1
-  gold: 1
+  damage: 0
+  buff: 02000000
+  defense: 10
+  gold: 0

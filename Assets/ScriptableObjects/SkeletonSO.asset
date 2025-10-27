@@ -15,3 +15,4 @@ MonoBehaviour:
   enemyName: Skeleton
   enemyHealth: 150
   enemyDamageAmount: 20
+  goldReward: 3
